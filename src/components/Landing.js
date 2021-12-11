@@ -12,10 +12,10 @@ const Landing = () => {
 
   return (
     <div className='landing-container'>
-      <div id='initial-container'>
-        <p id='initials'>SR</p>
+      <div className='initial-container'>
+        <p className='initials'>SR</p>
       </div>
-      <h1 id='name'>Shawn Rice</h1>
+      <h1 className='name'>Shawn Rice</h1>
       <button onClick={handleClick}><span>See More</span></button>
     </div>
   )

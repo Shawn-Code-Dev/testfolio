@@ -1,3 +1,11 @@
+:root {
+  --primary-color: #eac062;
+  --dark-color: #222222;
+  --shadow-color: #1a1a1a;
+  --primary-font: 'Dancing Script';
+  --primary-shadow: 0.3rem 0.3rem var(--shadow-color);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,67 +26,63 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-family: 'Dancing Script';
-}
-
 .landing-container {
+  color: var(--primary-color);
   display: flex;
   flex-direction: column;
+  font-family: var(--primary-font);
   justify-content: center;
   align-items: center;
-  background-color: #222222;
+  background-color: var(--dark-color);
   height: 100vh;
 }
 
-#initial-container {
-  border: 1px solid #eac062;
+.initial-container {
+  border: 1px solid var(--primary-color);
   border-radius: 100%;
-  height: 6.5rem;
-  width: 6.5rem;
+  height: 7rem;
+  width: 7rem;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  box-shadow: 2px 2px #1a1a1a;
+  box-shadow: var(--primary-shadow);
 }
 
-#initials {
-  font-family: 'Dancing Script';
+.initials {
   margin: 1rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
-  color: #eac062;
-  text-shadow: 2px 2px #1a1a1a;
+  text-shadow: var(--primary-shadow);
 }
 
-#name {
-  font-family: 'Dancing Script';
-  margin: 1rem;
-  font-size: 7rem;
-  color: #eac062;
-  text-shadow: 2px 2px #1a1a1a;
+.name {
+  margin: 1rem 0 3rem;
+  font-size: 9rem;
+  text-shadow: var(--primary-shadow);
 }
 
 .landing-container button {
-  height: 4rem;
-  width: 8rem;
+  height: 5rem;
+  width: 10rem;
   transition: all 0.3s;
-  background-color: #1a1a1a;
-  border: 1px solid #eac062;
+  background-color: var(--dark-color);
+  border: 1px solid var(--primary-color);
   border-radius: 1.2rem;
-  box-shadow: 2px 2px #1a1a1a;
+  box-shadow: var(--primary-shadow);
 }
 
 .landing-container button span {
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  text-shadow: 0.1rem 0.1rem var(--shadow-color);
   transition: all 0.3s;
-  font-family: 'Dancing Script';
-  color: #eac062;
-  font-size: 1.6rem;
 }
 
 .landing-container button:hover {
   scale: 1.2;
+  box-shadow: 0 0.5rem 0.5rem var(--shadow-color);
 }
 
 .portfolio-container {
