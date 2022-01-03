@@ -60,6 +60,7 @@ a {
   margin: 1rem 0 3rem;
   font-size: 9rem;
   text-shadow: var(--primary-shadow);
+  text-align: center;
 }
 
 .landing-container button {
@@ -83,8 +84,4 @@ a {
 .landing-container button:hover {
   scale: 1.2;
   box-shadow: 0 0.5rem 0.5rem var(--shadow-color);
-}
-
-.portfolio-container {
-  height: 100vh;
 }
